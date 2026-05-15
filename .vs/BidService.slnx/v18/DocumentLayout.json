@@ -1,0 +1,126 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2492148\\source\\repos\\BidService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\controllers\\bidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\controllers\\bidcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\models\\bidcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\models\\bidcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\models\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\models\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\models\\auctiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\models\\auctiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\models\\biddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\models\\biddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|c:\\users\\2492148\\source\\repos\\bidservice\\bidservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9F6269A-BA89-5462-78DF-A76733F34290}|BidService\\BidService.csproj|solutionrelative:bidservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BidController.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Controllers\\BidController.cs",
+              "RelativeDocumentMoniker": "BidService\\Controllers\\BidController.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Controllers\\BidController.cs",
+              "RelativeToolTip": "BidService\\Controllers\\BidController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T11:12:13.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BidContext.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\BidContext.cs",
+              "RelativeDocumentMoniker": "BidService\\Models\\BidContext.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\BidContext.cs",
+              "RelativeToolTip": "BidService\\Models\\BidContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T10:34:43.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bid.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\Bid.cs",
+              "RelativeDocumentMoniker": "BidService\\Models\\Bid.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\Bid.cs",
+              "RelativeToolTip": "BidService\\Models\\Bid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T10:29:31.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuctionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\AuctionDTO.cs",
+              "RelativeDocumentMoniker": "BidService\\Models\\AuctionDTO.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\AuctionDTO.cs",
+              "RelativeToolTip": "BidService\\Models\\AuctionDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T12:04:52.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BidDTO.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\BidDTO.cs",
+              "RelativeDocumentMoniker": "BidService\\Models\\BidDTO.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Models\\BidDTO.cs",
+              "RelativeToolTip": "BidService\\Models\\BidDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T11:28:18.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Program.cs",
+              "RelativeDocumentMoniker": "BidService\\Program.cs",
+              "ToolTip": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\Program.cs",
+              "RelativeToolTip": "BidService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-15T10:28:42.759Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
