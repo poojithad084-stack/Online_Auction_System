@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "5U3E17AD9b8=",
+  "dgSpecHash": "0AnCFEPeUJE=",
   "success": true,
   "projectFilePath": "C:\\Users\\2492148\\source\\repos\\BidService\\BidService\\BidService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\2492148\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\2492148\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\2492148\\.nuget\\packages\\dapper\\2.1.72\\dapper.2.1.72.nupkg.sha512",
     "C:\\Users\\2492148\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\2492148\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\2492148\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

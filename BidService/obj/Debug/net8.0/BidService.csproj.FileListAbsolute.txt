@@ -8,6 +8,7 @@ C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\BidService.
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\BidService.pdb
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Dapper.dll
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Humanizer.dll
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\2492148\source\repos\BidService\BidService\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
@@ -124,6 +125,7 @@ C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\BidService.
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\BidService.AssemblyInfo.cs
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\BidService.csproj.CoreCompileInputs.cache
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\BidService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\BidService.sourcelink.json
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\2492148\source\repos\BidService\BidService\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

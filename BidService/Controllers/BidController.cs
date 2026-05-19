@@ -1,25 +1,32 @@
 using BidService.Models;
+using Dapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using System.Security.Cryptography;
+using Microsoft.Data.SqlClient;
+
 [Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class BidController : ControllerBase
 {
     private readonly BidContext _context;
-    public BidController(BidContext context)
-    {
-        _context = context;
-    }
+    //public BidController(BidContext context)
+    //{
+    //    _context = context;
+    //}
 
     private readonly IHttpClientFactory _httpClientFactory;
 
-    public BidController(BidContext context, IHttpClientFactory httpClientFactory)
+    private readonly IConfiguration _configuration;
+
+    public BidController(BidContext context, IHttpClientFactory httpClientFactory, IConfiguration configuration)
     {
         _context = context;
         _httpClientFactory = httpClientFactory;
+        _configuration = configuration;
     }
 
     // GET: api/Bid
@@ -74,46 +81,73 @@ public class BidController : ControllerBase
         return NoContent();
     }
 
+    //this code is for testing with out jwt
+    //[HttpPost]
+    //[AllowAnonymous]
+    //public async Task<ActionResult<Bid>> PostBid(int buyerId,BidDTO bidDTO)
+    //{
+    //    //var buyerId = int.Parse(User.FindFirst("userId").Value);
+    //    int rows = 0;
+    //    using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
+    //    {
+    //        await connection.OpenAsync();
+    //        rows = await connection.ExecuteAsync(
+    //            "UpdateAuctionItem",
+    //            new
+    //            {
+    //                AuctionID = bidDTO.AuctionId,
+    //                CurrentBid = bidDTO.Amount,
+    //                BidderId = buyerId
+    //            },
+    //            commandType: CommandType.StoredProcedure
+    //            );
+    //    }
+
+    //    if (rows == 0)
+    //    {
+    //        return BadRequest("Bid too low or auction ended");
+    //    }
+
+    //    var bid = new Bid
+    //    {
+    //        Amount = bidDTO.Amount,
+    //        BidTime = DateTime.UtcNow,
+    //        AuctionId = bidDTO.AuctionId,
+    //        BuyerId = buyerId
+    //    };
+
+    //    _context.Bids.Add(bid);
+    //    await _context.SaveChangesAsync();
+
+    //    return CreatedAtAction("GetBid", new { id = bid.BidId }, bid);
+    //}
+
+    //this is actual code to update the bid
     // POST: api/Bid
     // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     [HttpPost]
     public async Task<ActionResult<Bid>> PostBid(BidDTO bidDTO)
     {
         var buyerId = int.Parse(User.FindFirst("userId").Value);
-
-        var client = _httpClientFactory.CreateClient();
-
-        var response = await client.GetAsync(
-            $"http://localhost:5001/api/auction/{bidDTO.AuctionId}");
-
-        if (!response.IsSuccessStatusCode)
+        int rows = 0;
+        using (SqlConnection connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection")))
         {
-            return BadRequest("Auction not found");
+            await connection.OpenAsync();
+            rows = await connection.ExecuteAsync(
+                "UpdateAuctionItem",
+                new
+                {
+                    AuctionID = bidDTO.AuctionId,
+                    CurrentBid = bidDTO.Amount,
+                    BidderId = buyerId
+                },
+                commandType: CommandType.StoredProcedure
+                );
         }
 
-        var auction = await response.Content.ReadFromJsonAsync<AuctionDTO>();
-
-        if (auction.Status != "ACTIVE")
-            return BadRequest("Auction is not active");
-
-        if (auction.EndTime <= DateTime.UtcNow)
-            return BadRequest("Auction has ended");
-
-        if (bidDTO.Amount <= auction.CurrentBid)
-            return BadRequest("Bid must be higher than current bid");
-
-        var updateResponse = await client.PostAsJsonAsync(
-            "http://localhost:5001/api/auction/update-bid",
-            new
-            {
-                AuctionId = bidDTO.AuctionId,
-                BidAmount = bidDTO.Amount,
-                BuyerId = buyerId
-            });
-
-        if (!updateResponse.IsSuccessStatusCode)
+        if (rows == 0)
         {
-            return BadRequest("Someone already placed a higher bid");
+            return BadRequest("Bid too low or auction ended");
         }
 
         var bid = new Bid
@@ -130,8 +164,8 @@ public class BidController : ControllerBase
         return CreatedAtAction("GetBid", new { id = bid.BidId }, bid);
     }
 
-        // DELETE: api/Bid/5
-        [HttpDelete("{bidid}")]
+    // DELETE: api/Bid/5
+    [HttpDelete("{bidid}")]
     public async Task<IActionResult> DeleteBid(int? bidid)
     {
         var bid = await _context.Bids.FindAsync(bidid);
